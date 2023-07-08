@@ -18,3 +18,8 @@
   text-transform: uppercase;
   font-size: 25px;
 }
+
+img{
+  height: auto;
+  width: 500px;
+}

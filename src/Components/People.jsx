@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import React from "react";
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import ObiWan from '../obi-wan.png'
 
 const People = () => {
     const [selectData, setSelectData] = useState([]);
@@ -35,7 +36,7 @@ const People = () => {
             {error ? (
                 <div>
                     <p>Estos no son los droides que estás buscando</p>
-                    <img src="ruta/a/la/imagen-de-obi-wan-kenobi" alt="Obi-Wan Kenobi" />
+                    <img src={ObiWan} alt="Obi-Wan Kenobi" />
                 </div>
             ) : (
                 <div>

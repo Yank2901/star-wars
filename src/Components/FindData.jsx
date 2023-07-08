@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import React from "react";
 import axios from 'axios';
+import ObiWan from '../obi-wan.png'
 
 const FindData = () => {
     const [sections, setSections] = useState([]);
@@ -109,7 +110,7 @@ const FindData = () => {
             {isLoadData && error ? (
                 <div>
                     <p>Estos no son los droides que estás buscando</p>
-                    <img src="ruta/a/la/imagen-de-obi-wan-kenobi" alt="Obi-Wan Kenobi" />
+                    <img src={ObiWan} alt="Obi-Wan Kenobi" />
                 </div>
             ) : null}
             
